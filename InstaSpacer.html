@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Insta Spacer</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png?w=300" type="image/x-icon"/>
+    <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png?w=300" type="image/x-icon"/>  
+</head>
+<body>
+    <div class="container">
+        <h1>Insta Spacer</h1>
+        <textarea id="textarea" class="textarea"></textarea>
+        <button class="btn btn-success" id="convertButton" style="font-size: 25px; margin: 20px 30px;" onclick="copyToClipboard('.textarea')">Confirm</button>  
+    </div>
+
+    <!-- STYLING -->
+
+    <style>
+        body {
+            background-color: palegoldenrod;
+        }
+
+        h1 {
+            color: hsl(0, 0%, 20%);
+            margin: 20px 30px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .textarea {
+            height: 25em;
+            width: 20em;
+        }
+
+        @media only screen and (min-width: 500px) {
+            .textarea {
+                height: 30em;
+                width: 25em;
+            }
+        }
+
+        @media only screen and (min-width: 700px) {
+            .textarea {
+                width: 40em;
+            }
+        }
+
+        @media only screen and (min-width: 900px) {
+            .textarea {
+                width: 50em;
+            }
+        }
+
+        @media only screen and (min-width: 1100px) {
+            .textarea {
+                width: 60em;
+            }
+        }
+
+        @media only screen and (min-width: 1400px) {
+            .textarea {
+                width: 70em;
+            }
+        }
+
+    </style>
+
+    <!-- SCRIPT -->
+
+	<script>
+		function copyText(el) {
+            var str = document.getElementById("textarea").value;
+            str = str.replace(/(?:\r\n|\r|\n)/g, "\u2063\n");
+            document.getElementById("textarea").value = str;
+            
+            el = (typeof el === 'string') ? document.querySelector(el) : el;
+            el.select()
+
+            document.execCommand('copy');
+
+            alert("The converted caption has been copied to clipboard");
+        }
+    </script>
+</body>
+</html>
