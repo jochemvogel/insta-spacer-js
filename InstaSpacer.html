@@ -9,12 +9,14 @@
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png?w=300" type="image/x-icon"/>
     <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/1200px-Instagram_logo_2016.svg.png?w=300" type="image/x-icon"/>  
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <h1>Insta Spacer</h1>
         <textarea id="textarea" class="textarea"></textarea>
         <button class="btn btn-success" id="convertButton" style="font-size: 25px; margin: 20px 30px;" onclick="copyToClipboard('.textarea')">Confirm</button>  
+        <p class="made-by">By <a href="https://www.jochemvogel.nl/" target="_blank">Jochem Vogel</a></p>
     </div>
 
     <!-- STYLING -->
@@ -27,6 +29,7 @@
         h1 {
             color: hsl(0, 0%, 20%);
             margin: 20px 30px;
+            font-family: 'Lato', sans-serif;
         }
 
         .container {
@@ -38,6 +41,23 @@
         .textarea {
             height: 25em;
             width: 20em;
+        }
+
+        .made-by {
+            font-family: 'Lato', sans-serif;
+            font-size: 1.1em;
+            color: hsl(0, 0%, 20%);
+            margin-top: 100px;
+        }
+
+        .made-by a {
+            color: hsl(0, 0%, 10%);
+            font-weight: 700;
+        }
+
+        .made-by a:hover {
+            color: hsl(0, 0%, 30%);
+            text-decoration: none;
         }
 
         @media only screen and (min-width: 500px) {
@@ -88,6 +108,7 @@
 
             alert("The converted caption has been copied to clipboard");
         }
+        
     </script>
 </body>
 </html>
