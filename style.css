@@ -9,15 +9,43 @@ h1 {
     font-family: 'Lato', sans-serif;
 }
 
+.btn.btn-success {
+    font-size: 25px; 
+    margin: 20px 30px;
+}
+
+.button-group {
+    display: flex;
+    width: 115px;
+    align-self: flex-start;
+    justify-content: space-between;
+    margin-top: -70px;
+}
+
+.button-group * {
+    align-self: flex-start;
+    font-size: 24px;
+    color: hsl(253, 37%, 93%);
+    background-color: hsla(20, 20%, 20%, .8);
+    padding: 5px 15px 5px 15px;
+    border: none;
+}
+
+.italicButton {
+    padding-right: 20px;
+}
+
 .container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 100vh;
+    width: 90vw;
 }
 
 .textarea {
     height: 25em;
-    width: 20em;
+    width: 100%;
 }
 
 .made-by {
@@ -40,33 +68,8 @@ h1 {
     text-decoration: none;
 }
 
-@media only screen and (min-width: 500px) {
-    .textarea {
-        height: 30em;
-        width: 25em;
-    }
-}
-
-@media only screen and (min-width: 700px) {
-    .textarea {
-        width: 40em;
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    .textarea {
-        width: 50em;
-    }
-}
-
-@media only screen and (min-width: 1100px) {
-    .textarea {
-        width: 60em;
-    }
-}
-
 @media only screen and (min-width: 1400px) {
-    .textarea {
-        width: 70em;
+    .container {
+        width: 50vw;
     }
 }
