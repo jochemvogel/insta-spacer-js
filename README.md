@@ -4,4 +4,4 @@ It's not possible to add spaces between lines of your caption in the Instagram U
 
 ### Future
 
-Will add a feature that will make it possible to make the text bold or italic. Not sure how to do it rn.
+Not going to update this repo anymore. I was trying to figure out how to add a bold/italic feature, but found some better solutions (like https://lingojam.com/BoldLetters). I'm not going to reinvent the wheel while there are plenty of options out there 😉
